@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.vth.api</groupId>
+	<artifactId>vth-chrome-extension</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>vth-chrome-extension</name>
+	<packaging>crx</packaging>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>stage-crx</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>exploded</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.btmatthews.maven.plugins</groupId>
+				<artifactId>crx-maven-plugin</artifactId>
+				<version>1.2.1</version>
+
+				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<id>package-crx</id>
+						<goals>
+							<goal>crx</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<crxSourceDirectory>${basedir}/src/main/chrome</crxSourceDirectory>
+							<packagingExcludes>**/*</packagingExcludes>
+							<packagingIncludes>manifest.json,popup.html,popup.js,icon.png</packagingIncludes>
+						</configuration>
+					</execution>
+				</executions>
+				
+			</plugin>
+		</plugins>
+
+	</build>
+</project>
