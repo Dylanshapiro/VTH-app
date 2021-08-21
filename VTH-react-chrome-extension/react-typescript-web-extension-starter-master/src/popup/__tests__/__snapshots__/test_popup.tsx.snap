@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component renders 1`] = `
+<div
+  className="popup-container"
+>
+  <div
+    className="container mx-4 my-4"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-12 text-center"
+      >
+        <p
+          className="lead mb-0"
+        >
+          Welcome to VTH-Chrome Extension
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-12"
+      >
+        <button
+          className="btn btn-block btn-outline-dark"
+          onClick={[Function]}
+        >
+          niaaa
+        </button>
+        <button
+          className="btn btn-block btn-outline-dark"
+          onClick={[Function]}
+        >
+          NIGERR
+        </button>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-12"
+      >
+        <button
+          className="btn btn-block btn-outline-dark"
+          onClick={[Function]}
+        >
+          niaaa
+        </button>
+        <button
+          className="btn btn-block btn-outline-dark"
+          onClick={[Function]}
+        >
+          NIGERR
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

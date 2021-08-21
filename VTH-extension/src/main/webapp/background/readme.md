@@ -1,1 +1,0 @@
-reference : https://developer.chrome.com/docs/extensions/mv3/background_pages/

@@ -1,0 +1,1 @@
+export { Netflix } from "./component";
